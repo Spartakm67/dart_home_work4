@@ -17,7 +17,7 @@ class Dystopian extends Book {
 
   @override
   void displayBook() {
-    print('Fantasy title: $title, author: $author, year: $year, genre: $genre.');
+    print('Title: $title, author: $author, year: $year, genre: $genre.');
   }
 }
 
