@@ -21,9 +21,9 @@ class Dystopian extends Book {
   }
 }
 
-final dystopianBook = Dystopian('1984', 'George Orwell', 1949, 'Dystopian');
-Book fiction = Book('Jane Eyre', 'Charlotte Brontë', 2023);
-Book fantasy = Book('Fahrenheit 451', 'Ray Bradbury', 1953);
+final dystopianBook = Dystopian('1984', 'George Orwell', 1949, 'dystopian');
+final fiction = Book('Jane Eyre', 'Charlotte Brontë', 2023);
+final fantasy = Book('Fahrenheit 451', 'Ray Bradbury', 1953);
 
 void main() {
   dystopianBook.displayBook();
