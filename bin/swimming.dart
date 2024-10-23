@@ -1,7 +1,5 @@
 mixin Swimming {
-  String get breed;
-
-  void swim() {
+  void swim(String breed) {
      print('$breed is swimming!');
   }
 }

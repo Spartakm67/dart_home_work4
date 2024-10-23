@@ -6,14 +6,12 @@ class Animal {
 
   Animal.newborn(this.breed) : age = 0;
 
-  Animal.swimmer(this.breed) : age = 1;
-
   void adultAnimal() {
-    final isAdult = (age == 0)
-        ? 'This $breed is newborn'
-        : (age > 2)
-        ? 'This $breed is adult'
-        : 'This $breed is not adult';
+    final isAdult = switch (age) {
+    0   => 'This $breed is newborn',
+    > 2 => 'This $breed is adult',
+    _   => 'This $breed is not adult',
+    };
     print(isAdult);
   }
 }
